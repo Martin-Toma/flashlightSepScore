@@ -1,0 +1,7 @@
+# This is a generated file and its contents are an internal implementation detail.
+# The patch step will be re-executed if anything in this file changes.
+# No other meaning or use of this file is supported.
+
+command (connected)=/home/martin/anaconda3/lib/python3.11/site-packages/cmake/data/bin/cmake;-Dcan_fetch=YES;-P;/home/martin/text-main/build/temp.linux-x86_64-cpython-311/_deps/pybind11-subbuild/pybind11-populate-prefix/tmp/pybind11-populate-gitupdate.cmake
+command (disconnected)=/home/martin/anaconda3/lib/python3.11/site-packages/cmake/data/bin/cmake;-Dcan_fetch=NO;-P;/home/martin/text-main/build/temp.linux-x86_64-cpython-311/_deps/pybind11-subbuild/pybind11-populate-prefix/tmp/pybind11-populate-gitupdate.cmake
+work_dir=/home/martin/text-main/build/temp.linux-x86_64-cpython-311/_deps/pybind11-src
