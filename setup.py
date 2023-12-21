@@ -182,7 +182,6 @@ class CMakeBuild(build_ext):
 
 
 def main():
-    """
     if os.getenv("BUILD_VERSION"):
         version = os.getenv("BUILD_VERSION")
     elif BUILD_VERSION_PATH.is_file():
@@ -192,8 +191,7 @@ def main():
         with open(version_txt) as f:
             version = f.readline().strip()
         version += get_local_version_suffix()
-    """
-    version = 1.0
+
     write_version_file(version)
 
     # Read Python bindings README
