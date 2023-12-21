@@ -14,6 +14,8 @@
 
 #include "flashlight/lib/text/decoder/LexiconDecoder.h"
 
+#include <stdio.h>
+
 namespace fl {
 namespace lib {
 namespace text {
@@ -67,6 +69,7 @@ void LexiconDecoder::decodeStep(const float* emissions, int T, int N) {
         }
         const TrieNodePtr& lex = iter->second;
         double emittingModelScore = emissions[t * N + n];
+        printf("\nemitting score: %ld",emittingModelScore);
         if (nDecodedFrames_ + t > 0 &&
             opt_.criterionType == CriterionType::ASG) {
           emittingModelScore += transitions_[n * N + prevIdx];
