@@ -11,11 +11,8 @@
 #include <functional>
 #include <numeric>
 #include <unordered_map>
-#include <stdio.h>
 
 #include "flashlight/lib/text/decoder/LexiconDecoder.h"
-
-double overAllLMScore = 0;
 
 namespace fl {
 namespace lib {
@@ -96,8 +93,6 @@ void LexiconDecoder::decodeStep(const float* emissions, int T, int N) {
               lmState = prevHyp.lmState;
               lmScore = lex->maxScore - lexMaxScore;
             }
-            printf("%d", lmScore);
-            overAllLMScore += lmScore;
             candidatesAdd(
                 candidates_,
                 candidatesBestScore_,
