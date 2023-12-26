@@ -14,7 +14,7 @@
 
 #include "flashlight/lib/text/decoder/LexiconDecoder.h"
 
-#include <stdio.h>
+//#include <stdio.h>
 
 namespace fl {
 namespace lib {
