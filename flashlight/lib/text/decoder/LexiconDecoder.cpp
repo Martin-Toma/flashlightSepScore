@@ -140,7 +140,7 @@ void LexiconDecoder::decodeStep(const float* emissions, int T, int N) {
               n,
               label,
               false, // prevBlank
-              prevHyp.emittingModelScore + emittingModelScore,
+              prevHyp.emittingModelScore + emittingModelScore + 100,
               prevHyp.lmScore + lmScore);
         }
 
