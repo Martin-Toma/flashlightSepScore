@@ -16,6 +16,8 @@
 
 //#include <stdio.h>
 
+#include <iostream>
+
 namespace fl {
 namespace lib {
 namespace text {
